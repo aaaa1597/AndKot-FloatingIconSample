@@ -1,0 +1,2 @@
+# AndKot-FloatingIconSample
+Floating Iconのサンプル
