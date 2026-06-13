@@ -1,5 +1,5 @@
 # AndKot-FloatingIconSample(SYSTEM_ALERT_WINDOW version)
-Sample for Floating Icon Android (Kotlin).
+Sample for Floating Icon Android (Kotlin).  
 ※It seems difficult to publish apps that use SYSTEM_ALERT_WINDOW permission to the Play Store.
 
 <img src="Screenshot.png" width="200"/>
