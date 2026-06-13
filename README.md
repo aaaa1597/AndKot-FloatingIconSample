@@ -1,4 +1,4 @@
-# AndKot-FloatingIconSample
+# AndKot-FloatingIconSample(SYSTEM_ALERT_WINDOW version)
 Sample for Floating Icon Android (Kotlin).
 
 <img src="Screenshot.png" width="200"/>
