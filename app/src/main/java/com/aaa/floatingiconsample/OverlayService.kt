@@ -54,29 +54,29 @@ class OverlayService : Service() {
     }
 
     private fun showOverlay() {
-        if (overlayView != null) return // 既に表示されていればスキップ
+        if (overlayView != null) return /* 既に表示されていればスキップ */
 
-        // 表示するViewの生成 (今回は簡単なレイアウトファイルをインフレート)
+        /* 表示するViewの生成 (今回は簡単なレイアウトファイルをインフレート) */
         overlayView = LayoutInflater.from(this).inflate(R.layout.overlay_layout, null)
 
-        // Android 26(Oreo)以降は TYPE_APPLICATION_OVERLAY を使用する
+        /* Android 26(Oreo)以降は TYPE_APPLICATION_OVERLAY を使用 */
         val layoutParams = WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, // タッチイベントを後ろに透過させる場合はこれ
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,   /* タッチイベントを後ろに透過させる場合はこれ */
             PixelFormat.TRANSLUCENT
         ).apply {
-            gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL // 画面上部中央に配置
-            y = 200 // 上からのマージン
+            gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL      /* 画面上部中央に配置 */
+            y = 200                                                 /* 上からのマージン */
         }
 
-        // 閉じるボタンの挙動などを実装
+        /* 閉じるボタンの挙動などを実装 */
         overlayView?.findViewById<ImageButton>(R.id.btn_close)?.setOnClickListener {
-            stopSelf() // サービス自体を終了させる
+            stopSelf()              /* サービス自体を終了させる */
         }
 
-        // 画面にビューを追加
+        /* 画面にビューを追加 */
         windowManager.addView(overlayView, layoutParams)
     }
 
