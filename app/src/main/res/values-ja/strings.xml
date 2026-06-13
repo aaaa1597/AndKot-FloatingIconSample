@@ -4,4 +4,5 @@
     <string name="wording_permission">\nアプリの実行には以下の権限が必要です。\n\n</string>
     <string name="wording_permission2">\n\n承認をお願いします。\n終了します。</string>
     <string name="close_icon">閉じる</string>
+    <string name="icon">Icon</string>
 </resources>

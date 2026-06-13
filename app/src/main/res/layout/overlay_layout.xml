@@ -10,6 +10,7 @@
         android:layout_height="64dp"
         android:layout_gravity="bottom|start"
         android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/icon"
         android:scaleType="fitCenter" />
 
     <ImageButton

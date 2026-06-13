@@ -4,4 +4,5 @@
     <string name="wording_permission">\nThis app requires this permission. Please grant your approval.\n</string>
     <string name="wording_permission2">\nThe app will now close.</string>
     <string name="close_icon">Close</string>
+    <string name="icon">Icon</string>
 </resources>
