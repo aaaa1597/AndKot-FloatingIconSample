@@ -12,7 +12,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.core.app.NotificationCompat
 
 class OverlayService : Service() {
@@ -72,7 +72,7 @@ class OverlayService : Service() {
         }
 
         // 閉じるボタンの挙動などを実装
-        overlayView?.findViewById<Button>(R.id.btn_close)?.setOnClickListener {
+        overlayView?.findViewById<ImageButton>(R.id.btn_close)?.setOnClickListener {
             stopSelf() // サービス自体を終了させる
         }
 
